@@ -1,0 +1,8 @@
+<launch>
+  
+  <include file="$(find session_6)/launch/cam.launch"/>
+  <include file="$(find session_6)/launch/ar_pose.launch"/>
+
+  <node pkg="session_6" type="simple_node" name="simple_node" output="screen"/>
+
+</launch>

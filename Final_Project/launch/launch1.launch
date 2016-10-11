@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<launch>
+
+  <include file="$(find ardrone_autonomy)/launch/ardrone.launch" />
+  <include file="$(find Final_Project)/launch/ar_pose.launch" />
+  <!--include file="$(find Final_Project)/launch/cam.launch"/-->
+
+
+  
+
+</launch>

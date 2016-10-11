@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<launch>
+
+  <node pkg="session_7" type="node" name="node" output="screen" />
+
+  <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure" output="screen" />
+
+  <!-- Launch empty world -->
+  <include file="$(find session_7)/launches/launchWorld1.launch"/>
+
+  <!-- Spawn the simple arm model -->
+  <include file="$(find session_7)/launches/launchRobot.launch"/>
+
+  <!-- Load simple arm controllers -->
+  <include file="$(find session_7)/launches/controls.launch"/>
+
+</launch>

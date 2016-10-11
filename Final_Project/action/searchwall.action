@@ -1,0 +1,8 @@
+# goal definition
+float64 rotationSpeed
+float64 timeRot
+float64 timeWait
+---
+# feedback definition
+---
+# result definition

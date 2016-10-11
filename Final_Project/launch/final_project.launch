@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<launch>
+
+  <include file="$(find ardrone_sim)/launch/ardrone_sim.launch" />
+  <include file="$(find Final_Project)/launch/ar_pose.launch" />
+  <!--include file="$(find Final_Project)/launch/cam.launch"/-->
+
+  <node pkg="Final_Project" type="stateMachine" name="stateMachine" output="screen" />
+
+  <node pkg="Final_Project" type="takeoffServer" name="takeoffServer" output="screen"/>
+  
+  <node pkg="Final_Project" type="landServer" name="landServer" output="screen"/>
+
+  <node pkg="Final_Project" type="alignController" name="alignController" output="screen"/>
+
+  <node pkg="Final_Project" type="searchWall" name="searchWall" output="screen"/>
+
+  <node pkg="Final_Project" type="gotoWall" name="gotoWall" output="screen"/>
+
+  <node pkg="Final_Project" type="controller" name="controller" output="screen"/>
+
+  <node pkg="Final_Project" type="toggleCam" name="toggleCam" output="screen"/>
+
+  <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure" output="screen" />
+  
+
+</launch>

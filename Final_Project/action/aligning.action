@@ -1,0 +1,10 @@
+# goal definition
+float64 aligningTime
+float64 tolerance
+float64 refHeight
+---
+# feedback definition
+float64 error
+---
+# result definition
+float64 error
